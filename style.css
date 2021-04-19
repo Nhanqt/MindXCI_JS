@@ -1,0 +1,15 @@
+.menu span{
+    width: 100px;
+    height: 30px;
+    background-color: aqua;
+    display:inline-block;
+    line-height: 30px;
+}
+
+.menu span:hover{
+    background-color: red;
+}
+
+.menu_vertical span{ 
+    display: block;
+} 
