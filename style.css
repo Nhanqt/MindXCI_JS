@@ -1,15 +1,44 @@
-.menu span{
-    width: 100px;
-    height: 30px;
-    background-color: aqua;
-    display:inline-block;
-    line-height: 30px;
+.menu span {
+  width: 100px;
+  height: 30px;
+  background-color: aqua;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
 }
 
-.menu span:hover{
-    background-color: red;
+.menu {
+  position: fixed;
 }
 
-.menu_vertical span{ 
-    display: block;
-} 
+.menu span:hover {
+  background-color: red;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  background: #262626;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  position: relative;
+  float: left;
+  border: solid 1px red;
+}
+
+.menu ul li:hover {
+  background: crimson;
+}
+
+.menu ul {
+  display: none;
+}
+
+.menu span:hover > ul {
+  display: block;
+}
