@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CL JS</title>
-    <link rel="stylesheet" href="style.css">
-</head> 
-<body>
-    <nav class="menu" id="menu">
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="signin-form">
+      <div class="image-login">
+        <img src="./src/img/background.jpg" alt="" />
+      </div>
+      <div class="form-login">
+        <form action="" class="box">
+          <h1>Login</h1>
+          <div class="input-group">
+            <br />
+            <input id="username-input" type="text" placeholder="Your name" />
+          </div>
+          <div class="input-group">
+            <br />
+            <input
+              type="password"
+              id="password-input"
+              placeholder="Your password"
+            />
+          </div>
+          <div class="form-option">
+            <input id="remember-me" type="checkbox" />
+            <span>Remember me</span>
+          </div>
+          <p id="error-message"></p>
+          <button id="button">Login</button><br />
+          <span class="ml-74"><a href="#">Forgot your password?</a></span>
+
+          <div class="signup-account">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
+
