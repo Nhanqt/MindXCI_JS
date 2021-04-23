@@ -13,6 +13,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 2px ridge bisque;
 }
 
 .box {
@@ -20,6 +21,8 @@ body {
   left: 50%;
   width: 400px;
   height: 350px;
+  justify-content: center;
+  align-items: center;
   /* text-align: center; */
   background-color: white;
   float: right;
@@ -29,10 +32,10 @@ body {
 .box input[type="password"] {
   border: 0;
   background: none;
-  display: block;
+  /* display: block; */
   text-align: center;
-  border: 2px solid #3498db;
-  padding: 5px 125px;
+  border-bottom: 2px solid hsl(204, 41%, 76%);
+  padding: 6px 127px;
   outline: none;
 }
 
@@ -45,8 +48,7 @@ body {
   background: #2b58ac;
   display: block;
   text-align: center;
-  border: 2px solid #3498db;
-  padding: 10px 181px;
+  padding: 10px 184px;
   outline: none;
   color: #fff;
 }
@@ -73,4 +75,5 @@ body {
   float: left;
   width: 400px;
   height: 400px;
+  opacity: 5;
 }
