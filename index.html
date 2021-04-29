@@ -4,44 +4,206 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>weather</title>
   </head>
   <body>
-    <div id="signin-form">
-      <div class="image-login">
-        <img src="./src/img/background.jpg" alt="" />
+    <div id="container">
+      <!-- ---------header weather---------------- -->
+      <div id="header-weather">
+        <div class="logo-weather" onclick="showLocation()">
+          <i class="fa fa-align-justify"></i>
+        </div>
+        <div class="img-app">
+          <img src="./src/img/logo.png" alt="" />
+        </div>
       </div>
-      <div class="form-login">
-        <form action="" class="box">
-          <h1>Login</h1>
-          <div class="input-group">
-            <br />
-            <input id="username-input" type="text" placeholder="Your name" />
+      <div id="header-weather-desktop">
+        <div class="img-app">
+          <img src="./src/img/logo.png" alt="" />
+        </div>
+        <div class="search">
+          <i class="fa fa-location-arrow"></i>
+          <div class="item">
+            <input type="text" />
+            <i class="fa fa-search"></i>
           </div>
-          <div class="input-group">
-            <br />
-            <input
-              type="password"
-              id="password-input"
-              placeholder="Your password"
-            />
+        </div>
+      </div>
+      <!-- ---------body weather----------------- -->
+      <div class="body-weather">
+        <div class="main-weather">
+          <div class="header-main-weather phone">
+            <p>Current Location</p>
+            <h1>Ho Chi Minh city,</h1>
+            <h1>Viet Nam</h1>
           </div>
-          <div class="form-option">
-            <input id="remember-me" type="checkbox" />
-            <span>Remember me</span>
+          <div class="body-main-weather">
+            <div class="icon-main-weather">
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+            </div>
+            <div class="detail-weather">
+              <h1>26 ºc</h1>
+              <p>Mostly sunny</p>
+              <p>feel like 28 ºc</p>
+            </div>
           </div>
-          <p id="error-message"></p>
-          <button id="button">Login</button><br />
-          <span class="ml-74"><a href="#">Forgot your password?</a></span>
 
-          <div class="signup-account">
-            <p>Don't have an account? <a href="#">Sign up</a></p>
+          <div class="header-main-weather desktop">
+            <p>Current Location</p>
+            <h1>Ho Chi Minh city,</h1>
+            <h1>Viet Nam</h1>
           </div>
-        </form>
+        </div>
+
+        <div class="day-weather">
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Mon</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Tue</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Wed</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Thu</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Fri</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Sat</h1>
+              <div><img src="./src/img/day_rain_thunder.png" alt="" /></div>
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Sun</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="main-weather">
+          <div class="header-main-weather phone">
+            <p>Current Location</p>
+            <h1>Ha Noi,</h1>
+            <h1>Viet Nam</h1>
+          </div>
+          <div class="body-main-weather">
+            <div class="icon-main-weather">
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+            </div>
+            <div class="detail-weather">
+              <h1>26 ºc</h1>
+              <p>Mostly sunny</p>
+              <p>feel like 28 ºc</p>
+            </div>
+          </div>
+          <div class="header-main-weather desktop">
+            <p>Current Location</p>
+            <h1>Ha Noi,</h1>
+            <h1>Viet Nam</h1>
+          </div>
+        </div>
+        <div class="day-weather">
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Mon</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Tue</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Wed</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Thu</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Fri</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+            <div class="detail-day-weather">
+              <h1>Sat</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="detail-day-weather">
+              <h1>Sun</h1>
+              <img src="./src/img/day_rain_thunder.png" alt="" />
+              <h1>26 ºc</h1>
+            </div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="location" id="location">
+      <i class="fa fa-times" onclick="closeLocation()"></i>
+      <div class="item">
+        <input type="text" />
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="current-location item">
+        <i class="fa fa-location-arrow"></i>
+        <span>Current Location</span>
+      </div>
+    </div>
+    <script>
+      const showLocation = () => {
+        document.getElementById("location").style.top = 0;
+      };
+
+      const closeLocation = () => {
+        document.getElementById("location").style.top = "100%";
+      };
+    </script>
   </body>
 </html>
-

@@ -1,79 +1,197 @@
-
-body {
+* {
   margin: 0;
   padding: 0;
-  background-color: #2b58ac;
+  box-sizing: border-box;
+  opacity: 1;
 }
-
-#signin-form {
-  width: 800px;
-  height: 400px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px ridge bisque;
+body {
+  background-color: #e5e5e5;
 }
-
-.box {
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 350px;
-  justify-content: center;
+#header-weather {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   align-items: center;
-  /* text-align: center; */
-  background-color: white;
-  float: right;
+  padding: 7px 15px;
+  margin-bottom: 35px;
+  height: 74px;
 }
 
-.box input[type="text"],
-.box input[type="password"] {
-  border: 0;
-  background: none;
-  /* display: block; */
-  text-align: center;
-  border-bottom: 2px solid hsl(204, 41%, 76%);
-  padding: 6px 127px;
-  outline: none;
-}
-
-.form-option {
-  padding-top: 20px;
-}
-
-#button {
-  border: 0;
-  background: #2b58ac;
+#container {
+  align-items: center;
   display: block;
-  text-align: center;
-  padding: 10px 184px;
+}
+
+.img-app img {
+  width: 136px;
+  height: 50px;
+}
+.logo-weather i {
+  font-size: 35px;
+}
+
+.body-weather {
+  width: 100%;
+  /* padding: 0 20px; */
+}
+
+.main-weather {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  align-items: center;
+}
+
+.body-main-weather {
+  display: flex;
+}
+
+.icon-main-weather {
+  margin-right: 20px;
+}
+
+.day-weather {
+  padding: 10px 0;
+}
+
+.detail-day-weather {
+  background-color: #ffffff;
+  width: 48.5%;
+  margin: 1px;
+}
+
+.detail-day-weather h1,
+img {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.detail-day-weather img {
+  width: 100px;
+}
+
+.item {
+  display: flex;
+}
+.item > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item > div > div {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.item > div > div img {
+  width: 100%;
+}
+
+.location {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 0.3s;
+  padding: 15px;
+}
+
+.location > i {
+  font-size: 25px;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 7px;
+}
+.location .item {
+  width: 100%;
+  background-color: #eef1f7;
+  align-items: center;
+  display: flex;
+  padding: 5px 11px;
+  margin-top: 20px;
+}
+.location input {
+  font-size: 25px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
   outline: none;
-  color: #fff;
 }
 
-.ml-74 a {
-  text-decoration: none;
-  color: black;
-  padding-left: 248px;
+.location .current-location {
+  padding: 8px 10px;
+  font-size: 25px;
 }
 
-.box h1 {
-  color: #2b58ac;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: center;
+.location .current-location i {
+  margin-right: 15px;
+}
+#header-weather-desktop {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15%;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+#header-weather-desktop i {
+  background-color: #eef1f7;
+  padding: 10px;
+  border-radius: 2px;
 }
 
-.signup-account {
-  padding-top: 62px;
-  text-align: center;
+#header-weather-desktop > div {
+  display: flex;
+}
+#header-weather-desktop .search {
+  background-color: #eef1f7;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+#header-weather-desktop > div input {
+  font-size: 25px;
+  width: 200px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.desktop {
+  display: none;
 }
 
-.image-login img {
-  float: left;
-  width: 400px;
-  height: 400px;
-  opacity: 5;
+@media (min-width: 576px) {
+  .phone {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  #header-weather {
+    display: none;
+  }
+  #header-weather-desktop {
+    display: flex;
+  }
+  .day-weather {
+    display: flex;
+  }
+  .item > div {
+    width: calc((100vw) / 7);
+  }
+  .item > div > div {
+    width: 170px;
+  }
+
+  .detail-day-weather img {
+    width: 175px;
+  }
+  .main-weather {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+  }
 }
